@@ -15,10 +15,10 @@
   <div class="navbar-fixed">
     <nav class="navbar-default" role="navigation">
       <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><span class="logo-text">zb</span></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="active" href="#">Prices</a></li>
-          <li><a class=""href="#">Contact</a></li>
-          <li><a class=""href="#">Work</a></li>
+        <ul class="right hide-on-med-and-down table-of-contents">
+          <li><a class="" href="#Prices">Prices</a></li>
+          <li><a class="" href="#Work">Work</a></li>
+          <li><a class="" href="#Contact">Contact</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
@@ -80,8 +80,16 @@
     </div>
     <br><br>
 
-    <div class="section">
+    <div id="Prices" class="section scrollspy">
+      <h4 class="header center black-text">Prices</h4>
+    </div>
 
+    <div id="Work" class="section scrollspy">
+      <h4 class="header center black-text">Work</h4>
+    </div>
+
+    <div id="Contact" class="section scrollspy">
+      <h4 class="header center black-text">Contact</h4>
     </div>
   </div>
 
@@ -116,13 +124,18 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://calebbodtorf.com/">cbodtorf</a>
+      Site by <a class="orange-text text-lighten-3" href="http://calebbodtorf.com/">cbodtorf</a>
       </div>
     </div>
   </footer>
 
 
   <!--  Scripts-->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/main.js"></script>
